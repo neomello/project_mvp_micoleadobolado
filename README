@@ -183,3 +183,11 @@ git add .
 git commit -m "Descreva sua alteração"
 git push
 ```
+# Deploy de tudo
+firebase deploy
+
+# Deploy apenas do hosting
+firebase deploy --only hosting
+
+# Deploy apenas do Firestore
+firebase deploy --only firestore

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { signInWithPopup, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
-import { auth, provider, db } from '../lib/firebase';
+import { auth, db, provider } from '../config/firebase';
 import HeroSectionMinimal from './HeroSectionMinimal';
 import LandingFooter from './LandingFooter';
 

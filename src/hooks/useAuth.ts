@@ -10,7 +10,7 @@ import {
   onAuthStateChanged
 } from 'firebase/auth';
 import { doc, setDoc } from 'firebase/firestore';
-import { auth, db } from '../lib/firebase';
+import { auth, db } from '../config/firebase';
 
 interface AuthError {
   code: string;

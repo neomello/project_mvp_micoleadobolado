@@ -11,9 +11,10 @@ import {
   orderBy,
   Timestamp,
   addDoc,
-  DocumentData
+  DocumentData,
+  Query
 } from 'firebase/firestore';
-import { db } from '../lib/firebase';
+import { db } from '../config/firebase';
 import { User, Newsletter } from '../types/firestore';
 
 // Helper functions
@@ -128,7 +129,7 @@ export const firestoreService = {
   // Buscar documentos
   async get(collectionName: string, field?: string, value?: any) {
     try {
-      let q = collection(db, collectionName);
+      let q: Query<DocumentData> = collection(db, collectionName);
       
       if (field && value) {
         q = query(q, where(field, '==', value));

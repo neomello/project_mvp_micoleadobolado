@@ -3,6 +3,7 @@ import { useAuth } from '../../hooks/useAuth';
 import { firestoreService } from '../../services/firestore';
 
 interface UserData {
+  id: string;
   name: string;
   email: string;
   purchases: any[];
@@ -19,7 +20,7 @@ export const Dashboard = () => {
         try {
           const data = await firestoreService.get('users', 'email', user.email);
           if (data.length > 0) {
-            setUserData(data[0]);
+            setUserData(data[0] as UserData);
           }
         } catch (error) {
           console.error('Erro ao buscar dados do usuário:', error);

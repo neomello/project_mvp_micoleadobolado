@@ -1,6 +1,6 @@
 import React from 'react';
 import { getAuth, signInWithPopup } from 'firebase/auth';
-import { provider } from '../lib/firebase';
+import { provider } from '../config/firebase';
 import { useNavigate } from 'react-router-dom';
 
 const NavBarMinimal: React.FC = () => {

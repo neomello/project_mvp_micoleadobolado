@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { collection, addDoc } from 'firebase/firestore';
-import { db } from '../lib/firebase';
+import { db } from '../config/firebase';
 import { Check, Loader2 } from 'lucide-react';
 
 const Gallery: React.FC = () => {

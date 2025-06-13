@@ -1,7 +1,7 @@
 import React from 'react';
 import { useAuth } from '../hooks/useAuth';
 import { signOut } from 'firebase/auth';
-import { auth } from '../lib/firebase';
+import { auth } from '../config/firebase';
 
 const CallToAction: React.FC = () => {
   const { user } = useAuth();

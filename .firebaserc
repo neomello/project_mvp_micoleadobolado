@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "dist": "micoleao-app",
+    "default": "micoleao-app"
+  },
+  "targets": {},
+  "etags": {}
+}
